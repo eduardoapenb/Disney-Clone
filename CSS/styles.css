@@ -1,0 +1,587 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    background-color: #08090D;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
+    
+}
+
+.header__logo{
+    height: 4rem;
+    
+}
+
+.header__menu{
+    width: 75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__list-items{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__item:hover a{
+    text-decoration: underline;
+}
+
+.header__item{
+    margin: 0 1rem;
+}
+
+
+.header__item-a{
+    color: white;
+    font-size: 1.3rem;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.header__icon{
+    width: 1.3rem;
+    margin-right: .5rem;
+    
+}
+
+.header__profile{
+ width: 20rem;
+ height: 5rem;
+
+
+}
+
+.header__account-profile-picture{
+    width: 5rem;
+}
+/*#08090D*/
+.header__list-accounts{
+    
+    background-color:#08090D;
+    height: 40rem;
+    width: 35rem;
+}
+
+.header__list-accounts li{
+    list-style:  none;
+    padding: .5rem 1rem;
+}
+
+.header__account-item-a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12rem;
+    font-size: 1.3rem;
+}
+
+.header__new-account-icon{
+    width: 4.5rem;
+}
+
+.header__new-account-a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15rem;
+    font-size: 1.3rem;
+}
+
+.header__list-options{
+   margin-top: 1.5rem;
+}
+
+.header__option{
+    padding: .5rem 1rem;
+}
+
+.header__option-a{
+    text-decoration: none;
+    color: white;
+    width: 15rem;
+    font-size: 1.3rem;
+}
+
+.header__accounts a:hover{
+    text-decoration: underline;
+} 
+
+.header__profile-details{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ height: 5.1rem;
+}
+
+.header__accounts{
+    display: none;
+} 
+
+.header__profile-details p{
+    color: white;
+    font-size: 1.3rem;  
+}
+
+.header__profile-details p{
+display: none;
+}
+
+.header__profile:hover .header__accounts,.header__accounts:hover .header__list-accounts {
+    display: block;
+    position: absolute;
+    z-index: 100;
+}
+
+.header__profile:hover p{
+    display: block;
+}
+
+.header__main-account{
+    height: 5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.main{
+    background-color: #08090D;
+}
+
+.newest{
+    width: 100%;
+    overflow: scroll;
+    padding: 0rem 2rem;
+    position: relative;
+}
+
+.newest__container{
+    white-space: nowrap;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    position: relative;
+    
+}
+
+.newest-item{
+    width: 40rem;
+    height: 25rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-right: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.84);
+    border: 0.2rem solid #08090D;
+
+}
+
+.newest-item__img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    
+}
+
+.newest-item__details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0rem 0rem 2rem 2rem;
+
+}
+
+.newest-item__title{
+    font-size: 2rem;
+    color: white;
+
+}
+
+.studios{
+    width: 100%;
+    height: 25rem;
+   
+
+}
+.studios__container{
+    margin: 2rem auto;
+    width: 95%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.studios-item__marvel{
+    border: 0.5rem solid #41434e;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms;
+   
+}
+
+.studios-item__marvel:hover{
+    transform: scale(1.1);
+    background-image: url('https://media3.giphy.com/media/10ADhj1QPawFna/giphy.gif?cid=ecf05e47o2iiw82eziajpbuoy4ujv6tu5mf812hyy2xbjldm&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.5rem solid white;
+    transition: border 50ms linear 0s;
+
+}
+
+.studios-item__disney{
+    border: 0.5rem solid #41434e;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms;
+    
+}
+
+.studios-item__disney:hover{
+    transform: scale(1.1);
+    background-image: url('https://media3.giphy.com/media/kolvlRnXh8Jj2/giphy.gif?cid=ecf05e47tht90lz5lepgfu8rvkjqsn5m2pnr7d8suov98jrp&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.5rem solid white;
+    transition: border 50ms linear 0s;
+}
+
+
+.studios-item__pixar{
+    border: 0.5rem solid #41434e;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms;
+   
+    
+}
+
+.studios-item__pixar:hover{
+    transform: scale(1.1);
+    background-image: url('https://media2.giphy.com/media/YBmpB9fObDFwA/giphy.gif?cid=ecf05e47hj5kgvu6ux5v3z6kant3f0az5zco1biyk7f9nlo6&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.5rem solid white;
+    transition: border 50ms linear 0s;
+    
+}
+
+
+
+
+.studios-item__starWars{
+    border: 0.5rem solid #41434e;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms;
+ 
+}
+
+.studios-item__starWars:hover{
+    transform: scale(1.1);
+    background-image: url('https://media1.giphy.com/media/9E7kUhnT9eDok/giphy.gif?cid=ecf05e47cjnek5lmpjrkqs7fuixk8g6smr5ccd1rmmanprsw&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.5rem solid white;
+    transition: border 50ms linear 0s;
+    
+}
+
+
+.studios-item__natGeo{
+    border: 0.5rem solid #41434e;
+    border-radius: 1rem;
+    width: 22rem;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms;
+}
+
+.studios-item__natGeo:hover{
+    transform: scale(1.1);
+    background-image: url('https://media0.giphy.com/media/oEK6WBsejSme4/giphy.gif?cid=790b76116a885b7ba5b7edd8a7c1b32308890ff362b8df52&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.5rem solid white;
+    transition: border 50ms linear 0s;
+
+}
+
+
+
+
+
+.studios-marvel--img{
+    width: 20rem;
+    
+}
+
+
+.studios-disney--img{
+    width: 20rem;
+    
+}
+
+.studios-pixar--img{
+    width: 20rem;
+    
+}
+
+.studios-starWars--img{
+    width: 20rem;
+    
+}
+
+.studios-natGeo--img{
+    width: 20rem;
+    
+}
+
+
+.newest__container:hover .newest-item:hover{
+    border: 0.2rem solid white;
+    transition: border 150ms linear 0s;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;   
+    background:rgba(255,255,255,.4);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  ::-webkit-scrollbar:hover:active {
+    background: #999;
+  }
+
+.carrousel{
+    width: 100%;
+    padding: 0 2rem;
+    position: relative;
+    overflow: scroll;
+}
+
+.carrousel-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.carrousel__container{
+    white-space: nowrap;
+    padding: 1rem;
+    margin: 5rem 0rem;
+    position: relative;
+}
+
+.carrousel__item{
+    width: 25rem;
+    height: 15rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-right: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.84);
+    border: 0.2rem solid #08090D;
+    transition: 250ms;
+    transform-origin: center left;
+}
+
+.carrousel__item--img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.carrousel-item__details{
+    position:absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.carrousel-item__details p{
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.carrousel__container:hover .carrousel__item{
+    opacity: 0.3;
+}
+
+.carrousel__container:hover .carrousel__item:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.carrousel__item:hover~.carrousel__item {
+    transform: translate3d(3rem, 0, 0);
+}
+
+.carrousel__container:hover .carrousel__item:hover p{
+    display: block;
+}
+
+.footer{
+    width: 100%;
+    height: 20rem;
+    
+    background-color: #08090D;
+
+}
+
+.footer-logo__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.footer-logo__img{
+    width: 15rem;
+}
+
+.footer-about_p1__container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: inherit;   
+}
+
+.footer-about_p1__container ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 80%;   
+}
+
+
+.footer-about_p1__container li{
+    list-style: none;
+}
+
+.footer-about_p1__container a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer-about_p2__container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: inherit;   
+}
+
+.footer-about_p2__container ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 80%;   
+}
+
+
+.footer-about_p2__container li{
+    list-style: none;
+}
+
+.footer-about_p2__container a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+.footer-credit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-credit h2{
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+.footer-credit a{
+    color: lightslategrey;
+
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
